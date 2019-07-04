@@ -32,6 +32,7 @@ export class UserService {
   store(user : User) {
     return this.httpClient.post(`${this.baseUrl}/store`, {data: user}).pipe(
       map((res)=> {
+        console.log(res);
         this.users.push(res['data']);
         return this.users;
       })
