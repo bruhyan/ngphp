@@ -12,7 +12,7 @@ if($_FILES['avatar'])
     // echo $ext;
     $avatar_tmp_name = $_FILES["avatar"]["tmp_name"];
     $error = $_FILES["avatar"]["error"];
-    if($error > 0 ||  ($ext != "jpg" && $ext != "pdf" && $ext != "docx")){
+    if($error > 0 ||  ($ext != "jpg" && $ext != "jpeg" && $ext != "pdf" && $ext != "docx" && $ext != "png" && $ext != "xls" && $ext != "xlsx" && $ext != "csv")){
         $response = [ 
             'status' => "error",
             'error' => true,
