@@ -1,3 +1,10 @@
+# NgPhp
+by Bryan Koh (bruhyan)
+
+## Description
+NgPhp is a web application that supports file upload and download using Angular as frontend ans PHP as backend. The database does not store files as BLOB but stores route directory to storage folder of uploaded file.
+
+
 php file serving note:
 
 1) the backend code (phpbackend) were developed and served using xampp and were not tested on other
